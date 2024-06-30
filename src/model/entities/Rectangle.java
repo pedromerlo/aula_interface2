@@ -2,7 +2,7 @@ package model.entities;
 
 import model.enums.Color;
 
-public class Rectangle extends Shape {
+public class Rectangle extends AbstractShape {
     private Double height;
     private Double width;
 
@@ -14,7 +14,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double area() {
-        return height*height;
+        return height*width;
     }
 
 }
